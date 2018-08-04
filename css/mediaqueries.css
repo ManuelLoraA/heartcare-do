@@ -1,0 +1,20 @@
+@media only screen and (max-width: 500px){
+    .wrapper {
+        border: none;
+        margin-top: 5vh;
+    }
+
+    .footer-space {
+        text-align: center;
+    }
+
+    .col.align-right {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .footer-space {
+        display: none;
+    }
+}
