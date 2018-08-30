@@ -43,16 +43,16 @@
                 <h2>Datos Personales:</h2>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Nombre del Paciente</label>
-                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="nombre completo">
+                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="nombre completo" name="nombre_del_paciente">
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Cédula</label>
-                        <input type="text" class="form-control bg-1" placeholder="Ej: 001-00000000-1">
+                        <input type="text" class="form-control bg-1" placeholder="Ej: 001-00000000-1" name="cedula">
                     </div>
                     <div class="col">
                             <label>Sexo</label>
-                            <select class="form-control bg-1">
+                            <select class="form-control bg-1" name="sexo">
                                 <option disabled selected>Seleccione sexo</option>
                                 <option>M</option>
                                 <option>F</option>
@@ -63,21 +63,21 @@
                 <div class="row">
                     <div class="col">
                         <label>Fecha de nacimiento</label>
-                        <input type="text" class="form-control bg-2" placeholder="dd/mm/aaaa">
+                        <input type="text" class="form-control bg-2" placeholder="dd/mm/aaaa" name="fecha_de_nacimiento">
                     </div>
                     <div class="col">
                             <label>Lugar de nacimiento</label>
-                            <input type="text" class="form-control bg-2" placeholder="indique su lugar de nacimiento">
+                            <input type="text" class="form-control bg-2" placeholder="indique su lugar de nacimiento" name="lugar_de_nacimiento">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Edad</label>
-                        <input type="text" class="form-control bg-1" placeholder="introduzca su edad">
+                        <input type="text" class="form-control bg-1" placeholder="introduzca su edad" name="edad">
                     </div>
                     <div class="col">
                         <label>Estado Cívil</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="estado_civil">
                             <option disabled selected>Indique su estado cívil</option>
                             <option>Soltero</option>
                             <option>Casado</option>
@@ -88,21 +88,21 @@
                 <div class="row">
                     <div class="col">
                         <label>Dirección</label>
-                        <input type="text" class="form-control bg-2" placeholder="Indique su dirección">
+                        <input type="text" class="form-control bg-2" placeholder="Indique su dirección" name="direccion">
                     </div>
                     <div class="col">
                             <label>Teléfono Móvil</label>
-                        <input type="text" class="form-control bg-2" placeholder="Ej: +1-809-000-0000">
+                        <input type="text" class="form-control bg-2" placeholder="Ej: +1-809-000-0000" name="telefono_movil">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Teléfono Residencial</label>
-                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000">
+                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000" name="telefono_residencial">
                     </div>
                     <div class="col">
                             <label>Tel. familiar cercano</label>
-                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000">
+                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000" name="tel_familiar_cercano">
                     </div>
                 </div>
                 
@@ -112,11 +112,11 @@
                 
                 <div class="form-group">
                     <label for="formGroupExampleInput">Diagnóstico del Paciente:</label>
-                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="Indique el diagnóstico">
+                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="Indique el diagnóstico" name="diagnostico_del_paciente">
                 </div>
                 <div class="form-group">
                     <label for="formGroupExampleInput">Procedimiento que requiere:</label>
-                    <input type="text" class="form-control bg-1" id="formGroupExampleInput" placeholder="Indique el procedimiento">
+                    <input type="text" class="form-control bg-1" id="formGroupExampleInput" placeholder="Indique el procedimiento" name="procedimiento_que_requiere">
                 </div>
                 
                 <hr>
@@ -125,14 +125,14 @@
                 <div class="row">
                     <div class="col">
                         <label>Posee seguro médico:</label>
-                        <select class="form-control bg-2">
+                        <select class="form-control bg-2" name="seguro_medico">
                                 <option>Sí</option>
                                 <option>No</option>
                         </select>
                     </div>
                     <div class="col">
                         <label>Aseguradora</label>
-                        <select class="form-control bg-2">
+                        <select class="form-control bg-2" name="aseguradora">
                             <option disabled selected>seleccione aseguradora</option>
                             <option>ARS Universal</option>
                             <option>ARS Palic</option>
@@ -147,11 +147,11 @@
                 <div class="row">
                     <div class="col">
                         <label>No. de póliza</label>
-                        <input type="text" class="form-control bg-1" placeholder="Indique no. de póliza">
+                        <input type="text" class="form-control bg-1" placeholder="Indique no. de póliza" name="no_de_poliza">
                     </div>
                     <div class="col">
                         <label>¿Ha recibido otra ayuda?</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="ha_recibido_otra_ayuda">
                                 <option>Sí</option>
                                 <option>No</option>
                         </select>
@@ -164,7 +164,7 @@
                 <div class="row">
                     <div class="col">
                         <label>Ha sido evaluado alguna vez</label>
-                        <select class="form-control bg-2">
+                        <select class="form-control bg-2" name="evaluado">
                                 <option selected disabled>indique si ha sido evaluado</option>
                                 <option>Sí</option>
                                 <option>No</option>
@@ -172,17 +172,17 @@
                     </div>
                     <div class="col">
                         <label>Nombre del Médico</label>
-                        <input type="text" class="form-control bg-2" placeholder="Indique nombre del médico">
+                        <input type="text" class="form-control bg-2" placeholder="Indique nombre del médico" name="nombre_del_medico">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Nombre del centro de salud consultado</label>
-                        <input type="text" class="form-control bg-1" placeholder="Indique nombre del centro">
+                        <input type="text" class="form-control bg-1" placeholder="Indique nombre del centro" name="centro_de_salud">
                     </div>
                     <div class="col">
                         <label>No de procesos realizados</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="procesos_realizados">
                                 <option selected disabled>indique número de procesos</option>
                                 <option>1</option>
                                 <option>2</option>
@@ -197,33 +197,33 @@
                 <h2>Situación socio-económica familiar</h2>
                 <div class="form-group">
                     <label for="exampleFormControlTextarea1">Breve Historia Familiar:</label>
-                    <textarea class="form-control bg-2" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba el mensaje aquí"></textarea>
+                    <textarea class="form-control bg-2" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba el mensaje aquí" name="situacion_familiar"></textarea>
                 </div>
                 <hr>
                 <div class="row">
                     <div class="col">
                         <label>Nombre del cónyuge</label>
-                        <input type="text" class="form-control bg-1" placeholder="Nombre completo">
+                        <input type="text" class="form-control bg-1" placeholder="Nombre completo" name="nombre_conyuge">
                     </div>
                     <div class="col">
                         <label>Lugar de trabajo del conyuge</label>
-                        <input type="text" class="form-control bg-1" placeholder="Nombre de la compañía">
+                        <input type="text" class="form-control bg-1" placeholder="Nombre de la compañía" name="lugar_trabajo_conyuge">
                     </div>
                 </div>
                 <div class="row">
                         <div class="col">
                                 <label>Lugar de trabajo del solicitante:</label>
-                                <input type="text" class="form-control bg-2" placeholder="Nombre de la compañía">
+                                <input type="text" class="form-control bg-2" placeholder="Nombre de la compañía" name="lugar_trabajo_solicitante">
                             </div>
                     <div class="col">
                         <label>Ingreso total de la familia:</label>
-                        <input type="text" class="form-control bg-2" placeholder="Ingreso total">
+                        <input type="text" class="form-control bg-2" placeholder="Ingreso total" name="ingreso_familia">
                     </div>
                 </div>
                 <div class="row">
                     <div class="col">
                         <label>Posee algún medio de transporte</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="medio_transporte">
                             <option disabled selected>seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
@@ -231,7 +231,7 @@
                     </div>
                     <div class="col">
                         <label>Tipo o modelo de vehículo</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="modelo_vehiculo">
                                 <option disabled selected>Tipo de vehículo</option>
                                 <option>Motocicleta</option>
                                 <option>Automóvil</option>
@@ -244,11 +244,11 @@
                 <div class="row">
                     <div class="col">
                         <label>Marca y año</label>
-                        <input type="text" class="form-control bg-2" placeholder="Ej: Suzuki Vitara 2012">
+                        <input type="text" class="form-control bg-2" placeholder="Ej: Suzuki Vitara 2012" name="marca_ano">
                     </div>
                     <div class="col">
                         <label>¿Tiene visa para viajar a otros países?</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="visa_viaje">
                             <option disabled selected>seleccione</option>
                             <option>Sí</option>
                             <option>No</option>
@@ -259,11 +259,11 @@
                 <div class="row">
                     <div class="col">
                         <label>¿Cuáles posee?</label>
-                        <input type="text" class="form-control bg-2" placeholder="Ej: USA, Brasil, Haití.">
+                        <input type="text" class="form-control bg-2" placeholder="Ej: USA, Brasil, Haití." name="paises">
                     </div>
                     <div class="col">
                         <label>¿Cuántas veces ha viajado en los últimos 3 años?</label>
-                        <select class="form-control bg-1">
+                        <select class="form-control bg-1" name="viajes_recientes">
                             <option disabled selected>seleccione no. de veces</option>
                             <option>1</option>
                             <option>2</option>
@@ -292,12 +292,12 @@
                             <th scope="row">Computadora</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="computadora_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="computadora_no">
                                 </div>
                             </td>
                         </tr>
@@ -305,12 +305,12 @@
                             <th scope="row">Internet</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="internet_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="internet_no">
                                 </div>
                             </td>
                         </tr>
@@ -318,12 +318,12 @@
                             <th scope="row">Televisión</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="television_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="television_no">
                                 </div>
                             </td>
                         </tr>
@@ -331,12 +331,12 @@
                             <th scope="row">Aire acondicionado</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="aire_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="aire_no">
                                 </div>
                             </td>
                         </tr>
@@ -344,12 +344,12 @@
                             <th scope="row">Nevera</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="aire_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="aire_no">
                                 </div>
                             </td>
                         </tr>
@@ -357,12 +357,12 @@
                             <th scope="row">Estufa</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="estufa_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="estufa_no">
                                 </div>
                             </td>
                         </tr>
@@ -370,12 +370,12 @@
                             <th scope="row">Microondas</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="microondas_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="microondas_no">
                                 </div>
                             </td>
                         </tr>
@@ -383,12 +383,12 @@
                             <th scope="row">Equipo de música</th>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="musica_si">
                                 </div>
                             </td>
                             <td>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1" name="musica_no">
                                 </div>
                             </td>
                         </tr>
@@ -411,7 +411,7 @@
            <img src="images/img-holder.png">
            <div class="form-group">
                 <label for="exampleFormControlFile1">Example file input</label>
-                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                <input type="file" class="form-control-file" id="exampleFormControlFile1" name="">
             </div>
         </div>
     
