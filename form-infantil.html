@@ -52,11 +52,11 @@
                     </div>
                     <div class="col">
                             <label>Sexo</label>
-                            <select class="form-control bg-3" name="sexo">
+                            <select class="form-control bg-1" name="sexo">
                                 <option disabled selected>Seleccione sexo</option>
-                                <option>M</option>
-                                <option>F</option>
-                                <option>Otro</option>
+                                <option value="m">M</option>
+                                <option value="f">F</option>
+                                <option value="otro">Otro</option>
                             </select>
                     </div>
                 </div>
@@ -115,21 +115,21 @@
                     <div class="col">
                         <label>Posee seguro médico:</label>
                         <select class="form-control bg-4" name="seguro_medico">
-                                <option>Sí</option>
-                                <option>No</option>
+                                <option value="si">Sí</option>
+                                <option value="no">No</option>
                         </select>
                     </div>
                     <div class="col">
                         <label>Aseguradora</label>
-                        <select class="form-control bg-4" name="aseguradora">
+                        <select class="form-control bg-2" name="aseguradora">
                             <option disabled selected>seleccione aseguradora</option>
-                            <option>ARS Universal</option>
-                            <option>ARS Palic</option>
-                            <option>Primera ARS de Humano</option>
-                            <option>ARS Constitución</option>
-                            <option>ARS SeNaSa</option>
-                            <option>ARS Renacer</option>
-                            <option>Otro</option>
+                            <option value="universal">ARS Universal</option>
+                            <option value="palic">ARS Palic</option>
+                            <option value="humano">Primera ARS de Humano</option>
+                            <option value="constitucion">ARS Constitución</option>
+                            <option value="senasa">ARS SeNaSa</option>
+                            <option value="renacer">ARS Renacer</option>
+                            <option value="otro">Otro</option>
                         </select>
                     </div>
                 </div>
@@ -141,8 +141,8 @@
                     <div class="col">
                         <label>¿Ha recibido otra ayuda?</label>
                         <select class="form-control bg-3" name="ha_recibido_otra_ayuda">
-                                <option>Sí</option>
-                                <option>No</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                 </div>
@@ -155,8 +155,8 @@
                         <label>Ha sido evaluado alguna vez</label>
                         <select class="form-control bg-4" name="evaluado">
                                 <option selected disabled>indique si ha sido evaluado</option>
-                                <option>Sí</option>
-                                <option>No</option>
+                                <option value="si">Sí</option>
+                                <option value="no">No</option>
                         </select>
                     </div>
                     <div class="col">
@@ -172,11 +172,11 @@
                     <div class="col">
                         <label>No de procesos realizados</label>
                         <select class="form-control bg-3" name="procesos_realizados">
-                                <option selected disabled>indique número de procesos</option>
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>+4</option>
+                            <option selected disabled>indique número de procesos</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="+4">+4</option>
                         </select>
                     </div>
                 </div>
@@ -235,18 +235,18 @@
                         <label>¿Posee algún medio de transporte en casa?</label>
                         <select class="form-control bg-3" name="medio_transporte">
                             <option disabled selected>seleccione</option>
-                            <option>Sí</option>
-                            <option>No</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                     <div class="col">
                         <label>Tipo o modelo de vehículo</label>
                         <select class="form-control bg-3" name="modelo_vehiculo">
-                                <option disabled selected>Tipo de vehículo</option>
-                                <option>Motocicleta</option>
-                                <option>Automóvil</option>
-                                <option>Camioneta</option>
-                                <option>Jeepeta</option>
+                            <option disabled selected>Tipo de vehículo</option>
+                            <option value="motocicleta">Motocicleta</option>
+                            <option value="automovil">Automóvil</option>
+                            <option value="camioneta">Camioneta</option>
+                            <option value="jeepeta">Jeepeta</option>
                         </select>
                     </div>
                 </div>
@@ -260,8 +260,8 @@
                         <label>¿Tiene visa para viajar a otros países?</label>
                         <select class="form-control bg-4" name="visa_viaje">
                             <option disabled selected>seleccione</option>
-                            <option>Sí</option>
-                            <option>No</option>
+                            <option value="si">Sí</option>
+                            <option value="no">No</option>
                         </select>
                     </div>
                 </div>
@@ -273,15 +273,13 @@
                     </div>
                     <div class="col">
                         <label>¿Cuántas veces ha viajado en los últimos 3 años?</label>
-                        <select class="form-control bg-3" name="viajes_recientes">
-                            <option disabled selected>seleccione no. de veces</option>
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                            <option>6+</option>
-                        </select>
+                        <option disabled selected>seleccione no. de veces</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="+6">+6</option>
                     </div>
                 </div>
 
