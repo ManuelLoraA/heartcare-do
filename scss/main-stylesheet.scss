@@ -57,7 +57,7 @@
 }
 
 .forms .form-1,
-.forms .form-2{
+.forms .form-2,{
     max-width: 300px;
     border: 4px solid transparent;
 }
@@ -163,10 +163,12 @@ footer p {
     padding-bottom: 40px;
     margin-top: 60px;
     margin-bottom: 60px;
-}
-
-.box-2 {
-    border: 1px solid #5fa8ed;
+    &.box-2{
+        border: 1px solid #5fa8ed;
+    }
+    &.box-3{
+        border: 1px solid #404040;
+    }
 }
 
 .header {
@@ -181,21 +183,27 @@ footer p {
     font-weight: 700;
     font-size: 14px;
     text-decoration: none;
-}
-
-.form-link:hover{
-    background-color: #ff8484;
-    text-decoration: none;
-    color: white;
+    &:hover{
+        background-color: #ff8484;
+        text-decoration: none;
+        color: white;
+    }
 }
 
 .form-link-2 {
     background-color: #5fa8ed;
+    &:hover {
+        background-color: #93cbff;
+    }
 }
 
-.form-link-2:hover{
-    background-color: #93cbff;
+.form-link-record {
+    background-color: #404040;
+    &:hover{
+        background-color: #747474;
+    }
 }
+
 
 .box img{
     width: 80%;
@@ -208,10 +216,12 @@ footer p {
     color: #404040;
 }
 
+.form-title-record{
+    margin-top: 40px;
+}
+
 #form-title{
     font-size: 24px;
-}
-#form-sub{
     font-size: 20px;
 }
 
@@ -258,4 +268,22 @@ label {
     position: none;
     margin-top: .25rem;
     margin-left: 0;
+}
+
+// RECORDS
+.table {
+    margin-top: 40px;
+}
+
+.table thead th {
+    border-top: none;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.record a{
+    color: #404040;
+    text-decoration: underline;
+    &:hover{
+        color: #5fa8ed;
+    }
 }
