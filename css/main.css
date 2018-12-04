@@ -233,8 +233,12 @@ footer p {
   margin-bottom: 60px;
 }
 
-.box-2 {
+.box.box-2 {
   border: 1px solid #5fa8ed;
+}
+
+.box.box-3 {
+  border: 1px solid #404040;
 }
 
 .header {
@@ -265,6 +269,14 @@ footer p {
   background-color: #93cbff;
 }
 
+.form-link-record {
+  background-color: #404040;
+}
+
+.form-link-record:hover {
+  background-color: #747474;
+}
+
 .box img {
   width: 80%;
 }
@@ -276,11 +288,12 @@ footer p {
   color: #404040;
 }
 
-#form-title {
-  font-size: 24px;
+.form-title-record {
+  margin-top: 40px;
 }
 
-#form-sub {
+#form-title {
+  font-size: 24px;
   font-size: 20px;
 }
 
@@ -327,4 +340,22 @@ label {
   position: none;
   margin-top: .25rem;
   margin-left: 0;
+}
+
+.table {
+  margin-top: 40px;
+}
+
+.table thead th {
+  border-top: none;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.record a {
+  color: #404040;
+  text-decoration: underline;
+}
+
+.record a:hover {
+  color: #5fa8ed;
 }
