@@ -28,8 +28,15 @@
             <div>
                 <a class="form-link form-link-record" href="index.html">volver atrás</a>
             </div>
-            <div>
-                <h1 id="form-title" class="form-title-record">Record de todos los formularios</h1>
+            <div class="row record-header">
+                <div class="col-md-4">
+                    <h1 id="form-title" class="form-title-record">Record de todos los formularios</h1>
+                </div>
+                <div class="col">
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Buscar con nombres o cédulas aquí" aria-label="Search">
+                    </form>
+                </div>
             </div>
         </div>
         
@@ -40,6 +47,7 @@
                     <th scope="col">Cédula</th>
                     <th scope="col">Ha recibido ayuda</th>
                     <th scope="col">Fecha</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -51,6 +59,9 @@
                     <td>402-1387168-1</td>
                     <td>Sí</td>
                     <td>03/12/2018</td>
+                    <td>
+                        <a href="#" data-toggle="modal" data-target="#large-modal">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -59,6 +70,9 @@
                     <td>402-5487168-1</td>
                     <td>No</td>
                     <td>06/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -67,6 +81,9 @@
                     <td>001-1287568-1</td>
                     <td>Sí</td>
                     <td>17/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -75,6 +92,9 @@
                     <td>402-1387168-1</td>
                     <td>Sí</td>
                     <td>03/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -83,6 +103,9 @@
                     <td>402-5487168-1</td>
                     <td>No</td>
                     <td>06/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -91,6 +114,9 @@
                     <td>001-1287568-1</td>
                     <td>Sí</td>
                     <td>17/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -99,6 +125,9 @@
                     <td>402-1387168-1</td>
                     <td>Sí</td>
                     <td>03/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -107,6 +136,9 @@
                     <td>402-5487168-1</td>
                     <td>No</td>
                     <td>06/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
                 <tr>
                     <td>
@@ -115,6 +147,9 @@
                     <td>001-1287568-1</td>
                     <td>Sí</td>
                     <td>17/12/2018</td>
+                    <td>
+                        <a href="#">edit</a>
+                    </td>
                 </tr>
 
             </tbody>
@@ -122,15 +157,412 @@
     
     </div>
 
-        <footer>
-            <div class="container-fluid flexing">
-                <div class="row justify-content-between footer-space">
-                    <div class="col">
-                        <p>*Record de todos los formularios anteriores.</p>
+    <footer>
+        <div class="container-fluid flexing">
+            <div class="row justify-content-between footer-space">
+                <div class="col">
+                    <p>*Record de todos los formularios anteriores.</p>
+                </div>
+                <div class="col align-right">
+                    <img src="images/logo.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL -->
+    <div class="modal fade bd-example-modal-lg" id="large-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="container flexing">
+                    <div class="header row">
+                        <div class="col-md-2 center">
+                            
+                        </div>
+                        <div class="col center">
+                            <h1 id="form-title">Formulario para aplicación de ayuda financiera</h1>
+                            <h4 id="form-sub">¿Qué tipo de paciente está haciendo la solicitud?</h4>
+                        </div>
+                        <div class="col-md-2 center">
+                            <h5>dd-mm-aaaa</h5>
+                        </div>
                     </div>
-                    <div class="col align-right">
-                        <img src="images/logo.png">
+                
+                    <div class="box">
+                        <div>
+                            <form>
+                                <h2>Datos Personales:</h2>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Nombre del Paciente</label>
+                                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="nombre completo" name="nombre_del_paciente">
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Cédula</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Ej: 001-00000000-1" name="cedula">
+                                    </div>
+                                    <div class="col">
+                                            <label>Sexo</label>
+                                            <select class="form-control bg-1" name="sexo">
+                                                <option disabled selected>Seleccione sexo</option>
+                                                <option value="m">M</option>
+                                                <option value="f">F</option>
+                                                <option value="otro">Otro</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Fecha de nacimiento</label>
+                                        <input type="date" class="form-control bg-2" placeholder="dd/mm/aaaa" name="fecha_de_nacimiento">
+                                    </div>
+                                    <div class="col">
+                                            <label>Lugar de nacimiento</label>
+                                            <input type="text" class="form-control bg-2" placeholder="indique su lugar de nacimiento" name="lugar_de_nacimiento">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Edad</label>
+                                        <input type="number" class="form-control bg-1" placeholder="introduzca su edad" name="edad">
+                                    </div>
+                                    <div class="col">
+                                        <label>Estado Cívil</label>
+                                        <select class="form-control bg-1" name="estado_civil">
+                                            <option disabled selected>Indique su estado cívil</option>
+                                            <option value="soltero">Soltero</option>
+                                            <option value="casado">Casado</option>
+                                            <option value="union_libre">Unión libre</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Dirección</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Indique su dirección" name="direccion">
+                                    </div>
+                                    <div class="col">
+                                            <label>Teléfono Móvil</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Ej: +1-809-000-0000" name="telefono_movil">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Teléfono Residencial</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000" name="telefono_residencial">
+                                    </div>
+                                    <div class="col">
+                                            <label>Tel. familiar cercano</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Ej: +1-809-000-0000" name="tel_familiar_cercano">
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                                
+                                <h2>Datos Médicos:</h2>
+                                
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Diagnóstico del Paciente:</label>
+                                    <input type="text" class="form-control bg-2" id="formGroupExampleInput" placeholder="Indique el diagnóstico" name="diagnostico_del_paciente">
+                                </div>
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Procedimiento que requiere:</label>
+                                    <input type="text" class="form-control bg-1" id="formGroupExampleInput" placeholder="Indique el procedimiento" name="procedimiento_que_requiere">
+                                </div>
+                                
+                                <hr>
+                                
+                                <h3>Información del seguro médico:</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Posee seguro médico:</label>
+                                        <select class="form-control bg-2" name="seguro_medico">
+                                                <option value="si">Sí</option>
+                                                <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label>Aseguradora</label>
+                                        <select class="form-control bg-2" name="aseguradora">
+                                            <option disabled selected>seleccione aseguradora</option>
+                                            <option value="universal">ARS Universal</option>
+                                            <option value="palic">ARS Palic</option>
+                                            <option value="humano">Primera ARS de Humano</option>
+                                            <option value="constitucion">ARS Constitución</option>
+                                            <option value="senasa">ARS SeNaSa</option>
+                                            <option value="renacer">ARS Renacer</option>
+                                            <option value="otro">Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>No. de póliza</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Indique no. de póliza" name="no_de_poliza">
+                                    </div>
+                                    <div class="col">
+                                        <label>¿Ha recibido otra ayuda?</label>
+                                        <select class="form-control bg-1" name="ha_recibido_otra_ayuda">
+                                                <option value="si">Sí</option>
+                                                <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <hr>
+                
+                                <h3>Evaluación Médica</h3>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Ha sido evaluado alguna vez</label>
+                                        <select class="form-control bg-2" name="evaluado">
+                                                <option selected disabled>indique si ha sido evaluado</option>
+                                                <option value="si">Sí</option>
+                                                <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label>Nombre del Médico</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Indique nombre del médico" name="nombre_del_medico">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Nombre del centro de salud consultado</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Indique nombre del centro" name="centro_de_salud">
+                                    </div>
+                                    <div class="col">
+                                        <label>No de procesos realizados</label>
+                                        <select class="form-control bg-1" name="procesos_realizados">
+                                                <option selected disabled>indique número de procesos</option>
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="+4">+4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                
+                                <hr>
+                
+                                <h2>Situación socio-económica familiar</h2>
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Breve Historia Familiar:</label>
+                                    <textarea class="form-control bg-2" id="exampleFormControlTextarea1" rows="3" placeholder="Escriba el mensaje aquí" name="situacion_familiar"></textarea>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Nombre del cónyuge</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Nombre completo" name="nombre_conyuge">
+                                    </div>
+                                    <div class="col">
+                                        <label>Lugar de trabajo del conyuge</label>
+                                        <input type="text" class="form-control bg-1" placeholder="Nombre de la compañía" name="lugar_trabajo_conyuge">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col">
+                                                <label>Lugar de trabajo del solicitante:</label>
+                                                <input type="text" class="form-control bg-2" placeholder="Nombre de la compañía" name="lugar_trabajo_solicitante">
+                                            </div>
+                                    <div class="col">
+                                        <label>Ingreso total de la familia:</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Ingreso total" name="ingreso_familia">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Posee algún medio de transporte</label>
+                                        <select class="form-control bg-1" name="medio_transporte">
+                                            <option disabled selected>seleccione</option>
+                                            <option value="si">Sí</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                    <div class="col">
+                                        <label>Tipo o modelo de vehículo</label>
+                                        <select class="form-control bg-1" name="modelo_vehiculo">
+                                                <option disabled selected>Tipo de vehículo</option>
+                                                <option value="motocicleta">Motocicleta</option>
+                                                <option value="automovil">Automóvil</option>
+                                                <option value="camioneta">Camioneta</option>
+                                                <option value="jeepeta">Jeepeta</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                                <div class="row">
+                                    <div class="col">
+                                        <label>Marca y año</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Ej: Suzuki Vitara 2012" name="marca_ano">
+                                    </div>
+                                    <div class="col">
+                                        <label>¿Tiene visa para viajar a otros países?</label>
+                                        <select class="form-control bg-1" name="visa_viaje">
+                                            <option disabled selected>seleccione</option>
+                                            <option value="si">Sí</option>
+                                            <option value="no">No</option>
+                                        </select>
+                                    </div>
+                                </div>
+                
+                                <div class="row">
+                                    <div class="col">
+                                        <label>¿Cuáles posee?</label>
+                                        <input type="text" class="form-control bg-2" placeholder="Ej: USA, Brasil, Haití." name="paises">
+                                    </div>
+                                    <div class="col">
+                                        <label>¿Cuántas veces ha viajado en los últimos 3 años?</label>
+                                        <select class="form-control bg-1" name="viajes_recientes">
+                                            <option disabled selected>seleccione no. de veces</option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="+6">+6</option>
+                                        </select>
+                                    </div>
+                                </div>
+                
+                                <hr>
+                
+                                <h3>Pertenencias del Solicitante:</h3>
+                
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr class="bg-1">
+                                            <th scope="col">Posee en su hogar:</th>
+                                            <th scope="col">Sí</th>
+                                            <th scope="col">No</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="bg-2">
+                                            <th scope="row">Computadora</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="computadora" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="computadora" id="exampleRadios2" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-1">
+                                            <th scope="row">Internet</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="internet" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="internet" id="exampleRadios2" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-2">
+                                            <th scope="row">Televisión</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="television" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="television" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-1">
+                                            <th scope="row">Aire acondicionado</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="aire_acondicionado" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="aire_acondicionado" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-2">
+                                            <th scope="row">Nevera</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="nevera" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="nevera" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-1">
+                                            <th scope="row">Estufa</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="estufa" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="estufa" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-2">
+                                            <th scope="row">Microondas</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="microondas" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="microondas" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="bg-1">
+                                            <th scope="row">Equipo de música</th>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="musica" id="exampleRadios1" value="true">
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="musica" id="exampleRadios1" value="false">
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <hr>
+                
+                                <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Consideraciones especiales y observaciones:</label>
+                                    <textarea class="form-control bg-2" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                
+                                <button type="submit" class="btn form-link">Modificar</button>
+                
+                
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </div>
+    </div>
+    
+    <!-- Scripts principales Bootstrap y JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

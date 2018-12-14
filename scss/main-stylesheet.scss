@@ -216,13 +216,12 @@ footer p {
     color: #404040;
 }
 
-.form-title-record{
-    margin-top: 40px;
+#form-title{
+    font-size: 20px;
 }
 
-#form-title{
-    font-size: 24px;
-    font-size: 20px;
+.form-title-record{
+    margin-bottom: 0;
 }
 
 form h2{
@@ -271,6 +270,21 @@ label {
 }
 
 // RECORDS
+.record-header{
+   margin-top: 40px;
+   align-items: center;
+
+   .form-control{
+       border-radius: 2rem;
+       width: 100%;
+   }
+}
+.modal-content {
+    border: none;
+    .flexing .box{
+        padding: 60px 15px 40px 15px;
+    }
+}
 .table {
     margin-top: 40px;
     background-color: #80808012;
@@ -287,4 +301,28 @@ label {
     &:hover{
         color: #5fa8ed;
     }
+}
+
+.record-section{
+    text-align: center;
+    margin-top: 25px;
+    .record-button{
+        border: 1px solid gray;
+        border-radius: 2rem;
+        padding: 8px 15px;
+        color: gray;
+        &:hover{
+            text-decoration: none;
+            background-color: #8080802e;
+            border: 1px solid transparent;
+            animation-name: record-button;
+            animation-duration: 0.5s;
+
+        }
+    }
+}
+
+@keyframes record-button {
+    from {background: transparent; border: 1px solid gray;}
+    to {background: #8080802e; border: 1px solid transparent;}
 }
