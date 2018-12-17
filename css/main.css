@@ -344,6 +344,7 @@ label {
 
 .table {
   margin-top: 40px;
+  background-color: #80808012;
 }
 
 .table thead th {
