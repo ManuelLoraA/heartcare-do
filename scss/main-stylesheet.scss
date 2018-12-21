@@ -1,9 +1,20 @@
 /* Login */
 .wrapper{
-    max-width: 400px;
+    max-width: 500px;
     border: 1px solid #b7b7b7;
     padding: 40px;
     margin-top: 20vh;
+}
+
+.signup{
+    max-width: 650px;
+    animation-name: sign-up;
+    animation-duration: 0.7s;
+}
+
+@keyframes sign-up {
+    from {max-width: 450px;}
+    to {max-width: 650px;}
 }
 
 #login-img{
@@ -325,4 +336,18 @@ label {
 @keyframes record-button {
     from {background: transparent; border: 1px solid gray;}
     to {background: #8080802e; border: 1px solid transparent;}
+}
+
+// MODAL
+
+.modal-title{
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #404040;
+}
+
+.modal-body p{
+    @extend label;
 }
