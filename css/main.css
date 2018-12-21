@@ -411,14 +411,14 @@ label, .modal-body p {
   margin-top: 25px;
 }
 
-.record-section .record-button, .record-section .loguot-button {
+.record-section .record-button, .record-section .logout-button {
   border: 1px solid gray;
   border-radius: 2rem;
   padding: 8px 15px;
   color: gray;
 }
 
-.record-section .record-button:hover, .record-section .loguot-button:hover {
+.record-section .record-button:hover, .record-section .logout-button:hover {
   text-decoration: none;
   background-color: #8080802e;
   border: 1px solid transparent;
@@ -450,7 +450,7 @@ label, .modal-body p {
   }
 }
 
-.loguot-button {
+.logout-button {
   margin-top: 20px;
 }
 
